@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke Van Namen - Scratch</title>
+    <!--<link rel="icon" href="test-site/images/Capture.jpg">-->
+    <!--- CSS Files-->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/color-1.css"> <!---Not sure if I will need this-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">  
+    <!---Style Switcher-->
+    <link rel="stylesheet" href="styles/color-1.css" class="alternate-style" title="color-1" disabled> <!---Not sure if I will need this-->
+    <link rel="stylesheet" href="styles/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="styles/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="styles/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="styles/style-switcher.css"> <!---Not sure if I will need this-->
+  </head>
+    <body>
+      <!--Main Container Start-->
+      <div class="main-container">
+        <!-- Aside start-->
+        <div class="aside">
+          <div class="logo">
+            <a href="#"><span>S</span>cratch</a>
+          </div>
+          <div class="nav-toggler">
+            <span></span>
+          </div>
+          <ul class="nav">
+            <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+            <li><a href="#service"><i class="fa fa-list"></i>Projects & Leadership</a></li>
+            <li><a href="#portfolio"><i class="fa fa-solid fa-blog"></i>Blog</a></li>
+            <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+            <div class="space">
+              <p class="contacting"><a href="https://www.linkedin.com/in/luke-van-namen-65b065194/"><i class="fa fa-brands fa-linkedin"></i></a></p>
+              <p class="contacting"><a href="https://www.lukevannamen.com/#contact"><i class="fa fa-phone"></i></a></p>
+              <p class="contacting"><a href="https://github.com/lvanname"><i class="fa fa-brands fa-github"></i></a></p>
+              <p class="contacting"><a href="https://www.lukevannamen.com/#contact"><i class="fa fa-envelope"></i></a></p>    
+            </div>
+            <div>
+              <p id="Visitors"></p>
+            </div>
+          </ul>
+        </div>
+        <!--Aside End-->
+        <!--Main Content Start-->
+        <div class="main-content">
+          <!--Home Section Start-->
+          <section class="home active section" id="home"> 
+            <div class="container">
+              <div class="row">
+                <div class="home-info padd-15">
+                  <h3 class="hello"> Hi, I'm <span class="name">Luke!</span></h3>
+                  <h3 class="my-profession">I am a <span class=typing></span></h3>
+                  <p>Current student at the University of Michigan interested in computer architecture and software engineering. 
+                    I also enjoy business and finance. In my freetime I play and practice golf as well as lead a bible study on campus.</p>
+                  <a href="files/Resume.pdf" class="btn">Download Resume</a>
+                </div>
+                <div class="home-img padd-15">
+                  <img src="images/Capture.JPG" alt="">
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--Home Section End-->
+          <!---About Section Start-->
+          <section class="about section" id="about"> 
+            <div class="container">
+              <div class="row">
+                <div class="section-title padd-15">
+                  <h2>About Me</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="about-content padd-15">
+                  <div class="row">
+                    <div class="about-text padd-15">
+                      <h3>I get excited about <span>golf</span>, enjoy <span>meeting people</span>, and appreciate a good <span>engineering problem</span></h3>
+                      <p>Hi! I like to think of my life like a journey with celebrations and roadblocks, closed doors and exciting opportunities.
+                        Thus far, my path has led me to the University of Michigan where I will be finishing my final year of undergrad, getting a degree in computer engineering. 
+                        Along the way I have met friends, completed projects, played golf, and volunteered with my church. I have learned how to manage expectations, deal with controversy, 
+                        be a teammate, and organize my thoughts.  
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="buttons padd-15">
+                      <a href="#contact" data-section-index="1" class="btn hire-me">Contact Me</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="personal-info padd-15">
+                      <div class="row">
+                        <div class="education padd-15">
+                          <h3 class="title">Education</h3>
+                          <div class="row">
+                            <div class="timline-box padd-15">
+                              <div class="timline shadow-dark">
+                                <div class="timline-item">
+                                  <div class="circle-dot"></div>
+                                  <h3 class="timline-date">
+                                    <i class="fa fa-calendar"></i> September 2019- May 2023
+                                  </h3>
+                                  <h4 class="timline-title">Bachelors of Science in Computer Engineering</h4>
+                                  <ul class="school">
+                                    <li class="bullet">Courses:</li>
+                                    <ul class="courses">
+                                      <li>- Aerospace Engineering: Blimp Course</li>
+                                      <li>- Programming & Data Structures</li>
+                                      <li>- Logic Design</li>
+                                      <li>- Discrete Math</li>
+                                      <li>- Circuits</li>
+                                      <li>- Data Structures & Algorithms</li>
+                                      <li>- Computer Organization</li>
+                                      <li>- Signals & Systems</li>
+                                      <li>- Big Data Visualization & Business Intelligence</li>
+                                      <li>- Accounting Principles</li>
+                                      <li>- Embedded Systems</li>
+                                      <li>- Complier Construction</li>
+                                      <li>- Computer Security</li>
+                                      <li>- Computer Architecture</li>
+                                    </ul>
+                                    <li class="bullet">Honors:</li>
+                                    <ul class="honors">
+                                      <li>- Deans List: Fall 2019, Winter 2021, Winter 2022</li>
+                                      <li>- University Honors: Winter 2020, Winter 2021, Winter 2022</li>
+                                    </ul>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>  
+                        </div>
+                      </div>
+                      <!-- <div class="row">
+                        <div class="info-item padd-15">
+                          <p>Birthday : <span>15 spe 1999</span></p>
+                        </div>
+                        <div class="info-item padd-15">
+                          <p>Age : <span>22</span></p>
+                        </div>
+                        <div class="info-item padd-15">
+                          <p>Website : <span>www.domain.com</span></p>
+                        </div>
+                        <div class="info-item padd-15">
+                          <p>Email : <span>lvanname@umich.edu</span></p>
+                        </div>
+                        <div class="info-item padd-15">
+                          <p>Degree : <span>BSE Computer Engineering</span></p>
+                        </div>
+                        <div class="info-item padd-15">
+                          <p>Phone : <span>(616) 970-6928</span></p>
+                        </div>
+                        <div class="info-item padd-15">
+                          <p>City : <span>University of Michigan</span></p>
+                        </div>
+                        <div class="info-item padd-15">
+                          <p>Freelance : <span>Avilable</span></p>
+                        </div> 
+                      </div> -->
+                    </div>
+                    <div class="skills padd-15">
+                      <div class="row">
+                        <div class="skill-item padd-15">
+                          <h5>C/C++</h5>
+                          <div class="progress">
+                            <div class="progress-in" style="width:80%;"></div>
+                            <div class="skill-percent">80%</div>
+                          </div>
+                        </div>
+                        <div class="skill-item padd-15">
+                          <h5>Linux</h5>
+                          <div class="progress">
+                            <div class="progress-in" style="width:75%;"></div>
+                            <div class="skill-percent">75%</div>
+                          </div>
+                        </div>
+                        <div class="skill-item padd-15">
+                          <h5>Docker</h5>
+                          <div class="progress">
+                            <div class="progress-in" style="width:60%;"></div>
+                            <div class="skill-percent">60%</div>
+                          </div>
+                        </div>
+                        <div class="skill-item padd-15">
+                          <h5>MATLAB</h5>
+                          <div class="progress">
+                            <div class="progress-in" style="width:60%;"></div>
+                            <div class="skill-percent">60%</div>
+                          </div>
+                        </div>
+                        <div class="skill-item padd-15">
+                          <h5>Microcontroller Systems</h5>
+                          <div class="progress">
+                            <div class="progress-in" style="width:50%;"></div>
+                            <div class="skill-percent">50%</div>
+                          </div>
+                        </div>
+                        <div class="skill-item padd-15">
+                          <h5>Verilog</h5>
+                          <div class="progress">
+                            <div class="progress-in" style="width:40%;"></div>
+                            <div class="skill-percent">40%</div>
+                          </div>
+                        </div>
+                        <div class="skill-item padd-15">
+                          <h5>Bash & Python</h5>
+                          <div class="progress">
+                            <div class="progress-in" style="width:25%;"></div>
+                            <div class="skill-percent">25%</div>
+                          </div>
+                        </div>
+                        <div class="skill-item padd-15">
+                          <h5>HTML & CSS</h5>
+                          <div class="progress">
+                            <div class="progress-in" style="width:20%;"></div>
+                            <div class="skill-percent">20%</div>
+                          </div>
+                        </div>
+                        <div class="skill-item padd-15">
+                          <h5>JavaScript</h5>
+                          <div class="progress">
+                            <div class="progress-in" style="width:10%;"></div>
+                            <div class="skill-percent">10%</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="row">
+                    <!-- <div class="education padd-15">
+                      <h3 class="title">Education</h3>
+                      <div class="row">
+                        <div class="timline-box padd-15">
+                          <div class="timline shadow-dark"> -->
+                            <!--- timeline item --> <!---
+                            <div class="timline-item">
+                              <div class="circle-dot"></div>
+                              <h3 class="timline-date">
+                                <i class="fa fa-calendar"></i> 2013 - 2015
+                              </h3>
+                              <h4 class="timline-title">Bachelors in CE</h4>
+                              <p class="timline-text"> This askdjhf alhelrjkhg alk lgfujqa owierhgoqhwerogj oqiwherg ;qowihreg hgoirhg oqiehrg kjherugh quehrgouh eoqhro;gui5h q;eoiurgh qoeirhg qohergouihqer;oigh qoerhg </p>
+                            </div>
+                            <div class="timline-item">
+                              <div class="circle-dot"></div>
+                              <h3 class="timline-date">
+                                <i class="fa fa-calendar"></i> 2013 - 2015
+                              </h3>
+                              <h4 class="timline-title">Bachelors in CE</h4>
+                              <p class="timline-text"> This askdjhf alhelrjkhg alk lgfujqa owierhgoqhwerogj oqiwherg ;qowihreg hgoirhg oqiehrg kjherugh quehrgouh eoqhro;gui5h q;eoiurgh qoeirhg qohergouihqer;oigh qoerhg </p>
+                            </div>
+                            <div class="timline-item">
+                              <div class="circle-dot"></div>
+                              <h3 class="timline-date">
+                                <i class="fa fa-calendar"></i> 2013 - 2015
+                              </h3>
+                              <h4 class="timline-title">Bachelors in CE</h4>
+                              <p class="timline-text"> This askdjhf alhelrjkhg alk lgfujqa owierhgoqhwerogj oqiwherg ;qowihreg hgoirhg oqiehrg kjherugh quehrgouh eoqhro;gui5h q;eoiurgh qoeirhg qohergouihqer;oigh qoerhg </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+                    <div class="experience padd-15">
+                      <h3 class="title">Experience</h3>
+                      <div class="row">
+                        <div class="timline-box padd-15">
+                          <div class="timline shadow-dark">
+                            <!--- timeline item -->
+                            <div class="timline-item">
+                              <div class="circle-dot"></div>
+                              <h3 class="timline-date">
+                                <i class="fa fa-calendar"></i> May 2021-August 2022
+                              </h3>
+                              <h4 class="timline-title">Department of Defense - U.S. Army</h4>
+                              <p class="bullet"><i>Engineering Technician - DevOps Team</i></p>
+                              <p class="timline-text">Developer in the Immersive Simulation Department developing programs to help warfighters more efficiently
+                                operate future U.S. Army ground vehicles</p>
+                                <p class="timline-text">Configured server for Unreal Engine projects to be built, packaged, and run as GPU accelerated containers</p>
+                                <p class="timline-text">Containerized Unreal Engine projects and Signaling Server using Dockerfiles to test new pixel streaming plugin
+                                  in hopes of implementing the plugin for future experiments</p>
+                            </div>
+                            <!--- timeline item -->
+                            <div class="timline-item">
+                              <div class="circle-dot"></div>
+                              <h3 class="timline-date">
+                                <i class="fa fa-calendar"></i> January 2021-April 2022
+                              </h3>
+                              <h4 class="timline-title">University of Michigan MDP - Heliophysics Space Team</h4>
+                              <p class="bullet"><i>Electrical Team Lead</i></p>
+                              <p class="timline-text">Implemented Raspberry Pi server with Long Wavelength Antenna Array to acquire data from antenna receivers 
+                                  by adding extra hardware and reconfiguring the serial interface on the Pi</p>
+                                <p class="timline-text">Configured Pi for remote access by altering original configuration files and debugging software programs and 
+                                  successfully commanded Pi via client-server model to collect and receive all data over wireless connection</p>
+                                <p class="timline-text">Designed grounding system for antenna and all instruments to decrease noise and protect equipment from 
+                                  dangerous weather</p>
+                            </div>
+                            <!--- timeline item -->
+                            <div class="timline-item">
+                              <div class="circle-dot"></div>
+                              <h3 class="timline-date">
+                                <i class="fa fa-calendar"></i> May 2020-September 2020
+                              </h3>
+                              <h4 class="timline-title">University of Michigan - Security & Privacy Research Lab</h4>
+                              <p class="bullet"><i>Undergraduate Researcher</i></p>
+                              <p class="timline-text">Researched CubeSat systems, communication, and security to expand knowledge on satellite vulnerabilities and potential attacks that could damage a satellite</p>
+                                <p class="timline-text">Simulated communication link between a ground station and CubeSat using Raspberry Pi and Software Defined Radio to understand how satellites communicate with devices on Earth</p>
+                            </div>
+                            <!--- timeline item -->
+                            <div class="timline-item">
+                              <div class="circle-dot"></div>
+                              <h3 class="timline-date">
+                                <i class="fa fa-calendar"></i> August 2018-August 2020
+                              </h3>
+                              <h4 class="timline-title">Stonewater Country Club</h4>
+                              <p class="bullet"><i>Outside Bag Attendant Leader</i></p>
+                              <p class="timline-text">Communicated with team about member needs and cart needs to allow for efficient and effective workplace</p>
+                                <p class="timline-text">Managed weekly schedule for all employees of staff by creating and adjusting schedule</p>
+                                <p class="timline-text">Prepared country club for play by organizing carts and assembling the range</p>
+                                <p class="timline-text">Greeted and assisted 30-60 members daily by taking and cleaning their clubs and asking them about their day</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!---About Section End-->
+          <!--Services Section Start-->
+          <section class="service section" id="service">
+            <div class="container">
+              <div class="row">
+                <div class="section-title padd-15">
+                  <h2>Projects & Leadership</h2>
+                </div>
+              </div>
+              <div class="row">
+                <!--- Service Item Start-->
+                <div class="service-item padd-15">
+                  <div class="service-item-inner">
+                    <div class="icon">
+                      <i class="fa fa-solid fa-rocket"></i>
+                    </div>
+                    <h4>Blimp Project - Aerospace Engineering</h4>
+                    <li>Programmed microcontroller to control servos and motors and allow for blimp to move to intended area</li>
+                    <li>Helped team diagnose problems with microcontroller using oscilloscope and micrometer to test power output</li>
+                    <li>Developed technical communication skills by giving 4 oral presentations and writing a final report on the 
+                      design, build, and test process of the blimp</li>
+                  </div>
+                </div>
+                <!---Service Item End-->
+                <!--- Service Item Start-->
+                <div class="service-item padd-15">
+                  <div class="service-item-inner">
+                    <div class="icon">
+                      <i class="fa fa-solid fa-microchip"></i>
+                    </div>
+                    <h4>Smart Watch - Embedded Systems</h4>
+                    <li>Designed a complex finite state machine that called device functions and allowed for smooth user experience</li>
+                    <li>Developed code for sending and receiving messages from LoRa devices using complex SPI interfacing</li>
+                    <li>Worked with teammates to integrate each of their device's software into one code base so that the devices could communicate with each other</li>
+                  </div>
+                </div>
+                <!---Service Item End-->
+                <!--- Service Item Start-->
+                <div class="service-item padd-15">
+                  <div class="service-item-inner">
+                    <div class="icon">
+                      <i class="fa fa-solid fa-cloud-arrow-up"></i>
+                    </div>
+                    <h4>The Cloud Resume Challenge - AWS</h4>
+                    <li>Learned HTML, CSS, and JavaScript to program this personal website</li>
+                    <li>Learned how to use AWS resources like S3 buckets, CloudFront, and DynamoDB</li>
+                    <li>Used Infrastructure as Code & CI/CD to automate my work by writing python tests. Also wrote lambda function to track number of users attracted to site</li>
+                  </div>
+                </div>
+                <!---Service Item End-->
+                <!--- Service Item Start-->
+                <div class="service-item padd-15">
+                  <div class="service-item-inner">
+                    <div class="icon">
+                      <i class="fa fa-laptop-code"></i>
+                    </div>
+                    <h4>Out of Order Processor</h4>
+                    <li>Designed and implemented an out-of-order processor based on P6 design by Intel</li>
+                    <li>Worked with teammates to integrate all modules including reservation station and reorder buffer into the pipeline to run programs</li>
+                  </div>
+                </div>
+                <!---Service Item End-->
+                <!--- Service Item Start-->
+                <div class="service-item padd-15">
+                  <div class="service-item-inner">
+                    <div class="icon">
+                      <i class="fa fa-golf-ball-tee"></i>
+                    </div>
+                    <h4>Club Golf Team - University of Michigan</h4>
+                    <li>Managed National Collegiate Club Golf Association (NCCGA) events for the Midwest region by collaborating 
+                      with PGA Professionals and NCCGA staff and discussing tournament setup</li>
+                    <li>Facilitated NCCGA Midwest golf tournaments of 30-50 players by delivering merchandise from various 
+                      sponsors to each player and providing all players with instructions about tournament</li>
+                  </div>
+                </div>
+                <!---Service Item End-->
+                <!--- Service Item Start-->
+                <div class="service-item padd-15">
+                  <div class="service-item-inner">
+                    <div class="icon">
+                      <i class="fa fa-person-chalkboard"></i>
+                    </div>
+                    <h4>ENGR 101 IA - University of Michigan</h4>
+                    <li>Taught a lab of ~25 students for 2 semesters introducing them to the fundamentals of Matlab and C++</li>
+                    <li>Facilitated office hours where I helped students better grasp programming concepts and learn how to debug code for projects</li>
+                  </div>
+                </div>
+                <!---Service Item End-->
+              </div>
+            </div>
+          </section>
+          <!--Services Section End-->
+          <!--Portfolio Section Start-->
+          <section class="portfolio section" id="portfolio">
+            <div class="container">
+              <div class="row">
+                <div class="section-title padd-15">
+                  <h2>Blog (Coming Soon)</h2>
+                </div>
+              </div>
+              <!-- <div class="row">
+                <div class="portfolio-heading padd-15">
+                  <h2>My Last Projects</h2>
+                </div>
+              </div>
+              <div class="row"> -->
+                <!--- Portfolio Item Start-->
+                <!-- <div class="portfolio-item padd-15">
+                  <div class="portfolio-item-inner shadow-dark">
+                    <div class="portfolio-img">
+                      <img src="images/CloudResumeProject.JPG" alt="">
+                    </div>
+                  </div>
+                </div> -->
+                <!--- Portfolio Item End-->
+                <!--- Portfolio Item Start
+                <div class="portfolio-item padd-15">
+                  <div class="portfolio-item-inner shadow-dark">
+                    <div class="portfolio-img">
+                      <img src="images/Wallpaper.jpg" alt="">
+                    </div>
+                  </div>
+                </div>-->
+                <!--- Portfolio Item End-->
+                <!--- Portfolio Item Start
+                <div class="portfolio-item padd-15">
+                  <div class="portfolio-item-inner shadow-dark">
+                    <div class="portfolio-img">
+                      <img src="images/Wallpaper.jpg" alt="">
+                    </div>
+                  </div>
+                </div>-->
+                <!--- Portfolio Item End-->
+                <!--- Portfolio Item Start
+                <div class="portfolio-item padd-15">
+                  <div class="portfolio-item-inner shadow-dark">
+                    <div class="portfolio-img">
+                      <img src="images/Wallpaper.jpg" alt="">
+                    </div>
+                  </div>
+                </div>-->
+                <!--- Portfolio Item End-->
+                <!--- Portfolio Item Start
+                <div class="portfolio-item padd-15">
+                  <div class="portfolio-item-inner shadow-dark">
+                    <div class="portfolio-img">
+                      <img src="images/Wallpaper.jpg" alt="">
+                    </div>
+                  </div>
+                </div>-->
+                <!--- Portfolio Item End-->
+                <!--- Portfolio Item Start
+                <div class="portfolio-item padd-15">
+                  <div class="portfolio-item-inner shadow-dark">
+                    <div class="portfolio-img">
+                      <img src="images/Wallpaper.jpg" alt="">
+                    </div>
+                  </div>
+                </div>-->
+                <!--- Portfolio Item End-->
+              </div>
+            </div>
+          </section>
+          <!--Portfolio Section End-->
+          <!--Contact Section Start-->
+          <section class="contact section" id="contact">
+            <div class="container">
+              <div class="row">
+                <div class="section-title padd-15">
+                  <h2>Contact Me</h2>
+                </div>
+              </div>
+              <h3 class="contact-title padd-15">Have Any Questions?</h3>
+              <!-- <h4 class="contact-sub-title padd-15">I am here</h4> -->
+              <div class="row">
+                <!--- Contact Info item start-->
+                <div class="contact-info-item padd-15">
+                  <div class="icon"><i class="fa fa-phone"></i></div>
+                  <h4>Call Me</h4>
+                  <p>(616) 970-6928</p>
+                </div>
+                <!--- Contact Info item end-->
+                <!--- Contact Info item start
+                <div class="contact-info-item padd-15">
+                  <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                  <h4>Office</h4>
+                  <p>University of Michigan</p>
+                </div>-->
+                <!--- Contact Info item end-->
+                <!--- Contact Info item start-->
+                <div class="contact-info-item padd-15">
+                  <div class="icon"><i class="fa fa-envelope"></i></div>
+                  <h4>Email</h4>
+                  <p>lvanname@umich.edu</p>
+                </div>
+                <!--- Contact Info item end-->
+                <!--- Contact Info item start-->
+                <div class="contact-info-item padd-15">
+                  <div class="icon"><i class="fa fa-globe-americas"></i></div>
+                  <h4>Website</h4>
+                  <p>www.lukevannamen.com</p>
+                </div>
+                <!--- Contact Info item end-->
+              </div>
+              <h3 class="contact-title padd-15">Send me an email</h3>
+              <!-- <h4 class="contact-sub-title padd-15">I'm very responsive</h4> -->
+              <!--- Contact Form-->
+              <form action="https://formsubmit.co/lvanname@umich.edu" method="POST">
+                <div class="row">
+                  <div class="contact-form padd-15">
+                    <div class="row">
+                      <div class="form-item col-6 padd-15">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                      </div>
+                      <div class="form-item col-6 padd-15">
+                        <div class="form-group">
+                          <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-item col-12 padd-15">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-item col-12 padd-15">
+                        <div class="form-group">
+                          <textarea type="text" class="form-control" placeholder="Message"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-item col-12 padd-15">
+                        <button type="submit" class="btn">Send Message</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+          <!--Contact Section End-->
+        </div>
+        <!--Main Content End-->
+      </div>
+      <!--End Main Contanier-->
+      <!--Style Switcher Start-->
+      <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+          <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+          <i class="fas"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+          <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+          <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+          <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+          <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        </div>
+      </div>
+      <!--Style Switcher End-->
+      <!--- JavaScript Files -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+      <script src="scripts/script.js"></script>
+      <script src="scripts/style-switcher.js"></script>
+      <script src="scripts/main.js"></script>
+    </body>
+</html>

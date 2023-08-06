@@ -1,0 +1,64 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'Infrastructure to build and deply AWS stacks for my personal website:
+  lukevannamen.com
+
+  '
+Globals:
+  Api:
+    Cors:
+      AllowMethods: '''GET,POST,OPTIONS'''
+      AllowHeaders: '''content-type'''
+      AllowOrigin: '''*'''
+      AllowCredentials: '''*'''
+Resources:
+  CounterFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: CounterFunction
+      Handler: app.lambda_handler
+      Runtime: python3.8
+      Events:
+        VisitorCount:
+          Type: Api
+          Properties:
+            Path: /counter
+            Method: get
+      Environment:
+        Variables:
+          databaseName:
+            Ref: myCounterTable
+      Policies:
+      - DynamoDBCrudPolicy:
+          TableName:
+            Ref: myCounterTable
+    Metadata:
+      SamResourceId: CounterFunction
+  myCounterTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: myCounterTable
+      AttributeDefinitions:
+      - AttributeName: Visitors
+        AttributeType: S
+      KeySchema:
+      - AttributeName: Visitors
+        KeyType: HASH
+      BillingMode: PAY_PER_REQUEST
+Outputs:
+  VisitorCountApi:
+    Description: API Gateway endpoint URL for Prod stage for Counter function
+    Value:
+      Fn::Sub: https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/counter/
+  VisitorCountFunction:
+    Description: Counter Lambda Function ARN (Gets Attribute)
+    Value:
+      Fn::GetAtt:
+      - CounterFunction
+      - Arn
+  VisitorCountFunctionIamRole:
+    Description: Implicit IAM Role created for Counter function
+    Value:
+      Fn::GetAtt:
+      - CounterFunctionRole
+      - Arn
