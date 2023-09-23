@@ -11,6 +11,7 @@ const nav = document.querySelector(".nav"),
     totalNavList = navList.length,
     allSection = document.querySelectorAll(".section"),
     totalSection = allSection.length;
+
     for(let i = 0; i < totalNavList; i++) {
         const a=navList[i].querySelector("a");
         a.addEventListener("click", function() {
@@ -29,6 +30,31 @@ const nav = document.querySelector(".nav"),
             }
         })
     }
+
+const nav2 = document.querySelector(".space"),
+    navList2 = nav2.querySelectorAll("p"),
+    totalNavList2 = navList2.length,
+    allSection2 = document.querySelectorAll(".section"),
+    totalSection2 = allSection.length;
+    
+    for(let i = 0; i < totalNavList2; ++i) {
+        const a = navList2[i].querySelector("a");
+        a.addEventListener("click", function() {
+            removeBackSection();
+            for(let j = 0; j < totalNavList2; ++j) {
+                if(navList2[j].querySelector("a").classList.contains("active")) {
+                    addBackSection(j);
+                }
+                navList2[j].querySelector("a").classList.remove("active");
+            }
+            this.classList.add("active")
+            showSection(this);
+            if(window.innerWidth < 1200) {
+                asideSectionTogglerBtn();
+            }
+        })
+    }
+    
     function showSection(element) {
         for(let i = 0; i < totalSection; i++) {
             allSection[i].classList.remove("active");
