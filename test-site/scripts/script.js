@@ -48,7 +48,8 @@ const nav2 = document.querySelector(".space"),
                 navList2[j].querySelector("a").classList.remove("active");
             }
             this.classList.add("active")
-            showSection(this);
+            showSection(this),
+            updateNav(this);
             if(window.innerWidth < 1200) {
                 asideSectionTogglerBtn();
             }
