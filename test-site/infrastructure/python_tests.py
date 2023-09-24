@@ -27,6 +27,10 @@ class TestFrontEndSite(unittest.TestCase):
         if page_src.find("Projects") < 0:
             self.fail("Can't find Projects")
 
+    # We need to add one more test here to check if the counter value
+    # is returned correctly if we call API
+
+    # We could also write a test that tests if the count value can be found in the site
     
         
 

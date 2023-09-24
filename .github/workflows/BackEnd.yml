@@ -1,12 +1,47 @@
-# name : Changes to Backend Code (Python Scripts, Tests, Infrastructure)
-#
-# on: 
-#  push:
-#    branches:
-#    - main
+name : Changes to Backend Code (Python Scripts, Tests, Infrastructure)
 
-# jobs:
-#  deploy:
-#    runs-on: ubuntu-22.04
-#    steps:
-#    - uses: actions/checkout@master
+on: 
+ push:
+   branches:
+   - main
+
+# This tests the python counter function that we wrote to confirm that it is working as we hoped
+jobs:
+  deploy-python-tests1:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    - name: python_tests
+      run: cd Lambda && python3 python_tests.py
+
+# This is now if I ever wanted to deploy more infrastructure (cloudfront, API's, S3 Buckets, etc) into AWS
+# Remember to update the terraform files before doing this so that you deploy the correct infrastructure
+# DO NOT RUN RIGHT NOW!!!!!!!
+  #deploy-infrastructure:
+    #needs: deploy-python-tests1
+    #runs-on: ubuntu-22.04
+    #steps:
+      #- uses: actions/checkout@master
+      #- uses: actions/setup-python@v4
+      #- uses: hashicorp/terraform-github-actions/init@v0.4.0
+      #- uses: aws-actions/configure-aws-credentials@v1
+        #with:
+          #AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          #AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          #AWS_REGION: 'us-east-1'
+      #- run: cd infrastructure && terraform plan && terraform apply --yes
+
+# This runs python tests to check if the website is still running 
+# and also if the counter is correctly updated
+  deploy-python-tests2:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    - name: python_tests
+      run: cd infrastructure && python3 python_tests.py
