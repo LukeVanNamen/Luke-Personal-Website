@@ -15,7 +15,7 @@ jobs:
       with:
         python-version: '3.x'
     - name: python_tests
-      run: cd Lambda && python3 python_tests.py
+      run: cd test-site/Lambda && python3 python_tests.py
 
 # This is now if I ever wanted to deploy more infrastructure (cloudfront, API's, S3 Buckets, etc) into AWS
 # Remember to update the terraform files before doing this so that you deploy the correct infrastructure
@@ -44,4 +44,4 @@ jobs:
       with:
         python-version: '3.x'
     - name: python_tests
-      run: cd infrastructure && python3 python_tests.py
+      run: cd test-site/infrastructure && python3 python_tests.py
