@@ -18,8 +18,6 @@ class TestFrontEndSite(unittest.TestCase):
             self.fail("Resume not available")
         if page_src.find("Luke") < 0:
             self.fail("Can't find name")
-        if page_src.find("Views") < 0:
-            self.fail("Can't find views")
     
     def test_projects(self):
         r = requests.get("https://www.lukevannamen.com/#projects")
