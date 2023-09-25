@@ -1,9 +1,7 @@
 import unittest
 import requests
-import pytest
 import subprocess
 from urllib.request import urlopen
-from bs4 import BeautifulSoup
 
 class TestFrontEndSite(unittest.TestCase):
     def test_web_app_running(self):
