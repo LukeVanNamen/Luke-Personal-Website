@@ -14,8 +14,6 @@ jobs:
     - uses: actions/setup-python@v4
       with:
         python-version: '3.x'
-    - name: adding requests to image
-      run: pip3 install requests
     - name: running python_tests
       run: cd test-site/Lambda && python3 python_tests.py
 
@@ -45,5 +43,7 @@ jobs:
     - uses: actions/setup-python@v4
       with:
         python-version: '3.x'
+    - name: adding requests to image
+      run: pip3 install requests
     - name: python_tests
       run: cd test-site/infrastructure && python3 python_tests.py
