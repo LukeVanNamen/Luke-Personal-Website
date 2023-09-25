@@ -14,8 +14,8 @@ class TestFrontEndSite(unittest.TestCase):
         r = requests.get("https://www.lukevannamen.com/#home")
         page_src = r.text
  
-        if page_src.find("Greenside") < 0:
-            self.fail("Can't find brand")
+        if page_src.find("Download Resume") < 0:
+            self.fail("Resume not available")
         if page_src.find("Luke") < 0:
             self.fail("Can't find name")
         if page_src.find("Views") < 0:
